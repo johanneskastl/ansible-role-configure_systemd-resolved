@@ -11,7 +11,9 @@ None.
 Role Variables
 --------------
 
-None.
+- `nameservers`: which nameservers to use (default: use three privacy friendly ones)
+- `search_domains`: search domain(s) to add to resolv.conf (will be omitted if not set)
+- `dnssec_enabled`: whether to enable DNSSEC (default: `true`)
 
 Dependencies
 ------------
