@@ -2,3 +2,12 @@
 # configure_systemd-resolved/defaults/main.yml
 
 resolved_config_directory: '/etc/systemd/resolved.conf.d'
+
+#
+# some default settings
+#
+nameservers:
+  - '80.241.218.68'
+  - '159.69.114.157'
+  - '176.9.93.198'
+dnssec_enabled: 'true'
