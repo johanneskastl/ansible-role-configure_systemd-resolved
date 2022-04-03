@@ -1,0 +1,11 @@
+#
+#
+#
+[Resolve]
+DNS={{ nameservers | join('') }}
+Domains={{ search_domains | join('') }}
+{% if dnssec_enabled | bool %}
+DNSSEC=true
+{% else %}
+DNSSEC=false
+{% endif%}
