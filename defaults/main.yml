@@ -2,6 +2,7 @@
 # configure_systemd-resolved/defaults/main.yml
 
 resolved_config_directory: '/etc/systemd/resolved.conf.d'
+systemd_unit_name: 'systemd-resolved'
 
 #
 # some default settings
