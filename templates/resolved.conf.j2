@@ -3,7 +3,9 @@
 #
 [Resolve]
 DNS={{ nameservers | join('') }}
+{% if search_domains is defined %}
 Domains={{ search_domains | join('') }}
+{% endif%}
 {% if dnssec_enabled | bool %}
 DNSSEC=true
 {% else %}
