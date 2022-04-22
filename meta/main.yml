@@ -1,5 +1,6 @@
 galaxy_info:
   role_name: 'configure_systemd-resolved'
+  namespace: 'johanneskastl'
   author: 'Johannes Kastl'
   description: 'Configure systemd-resolved'
   company: 'B1 Systems GmbH'
