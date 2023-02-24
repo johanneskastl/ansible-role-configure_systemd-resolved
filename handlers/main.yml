@@ -2,6 +2,6 @@
 # configure_systemd-resolved/handlers/main.yml
 
 - name: 'Restart the systemd-resolved service'
-  service:
+  ansible.builtin.service:
     name: "{{ systemd_unit_name }}"
     state: 'restarted'
