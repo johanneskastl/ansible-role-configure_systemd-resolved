@@ -1,3 +1,5 @@
+![Ansible Lint](https://github.com/johanneskastl/ansible-role-configure_systemd-resolved/workflows/Ansible%20Lint/badge.svg)
+
 configure_systemd-resolved
 =========
 
