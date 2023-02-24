@@ -2,7 +2,7 @@
 # configure_systemd-resolved/tasks/main.yml
 
 - name: 'Make sure {{ resolved_config_directory }}/ exists'
-  file:
+  ansible.builtin.file:
     path: '{{ resolved_config_directory }}/'
     state: 'directory'
     owner: 'root'
@@ -10,7 +10,7 @@
     mode: '0755'
 
 - name: 'Create {{ resolved_config_directory }}/ansible.conf'
-  template:
+  ansible.builtin.template:
     src: 'resolved.conf.j2'
     dest: '{{ resolved_config_directory }}/ansible.conf'
     owner: 'root'
