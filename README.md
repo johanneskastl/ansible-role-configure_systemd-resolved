@@ -28,11 +28,10 @@ Example Playbook
     - hosts: servers
       roles:
         - role: 'johanneskastl.configure_systemd-resolved'
-          vars:
-            nameservers:
-              - '192.168.0.1'
-            search_domains:
-              - 'example.org'
+          nameservers:
+            - '192.168.0.1'
+          search_domains:
+            - 'example.org'
 
 License
 -------
